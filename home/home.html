@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <title>HIFI Delivery Eats</title>
+  </head>
+  <body>
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">HIFI Delivery Eats</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <form class="search-form">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Search..."
+                  aria-label="Search"
+                />
+                <button type="submit" class="search-button">
+                  <i class="bx bx-search"></i>
+                </button>
+              </form>
+            </li>
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item nav__dropdown">
+              <a href="#" class="nav__link nav__menu-link"
+                >Menu <i class="bx bx-chevron-down"></i
+              ></a>
+              <div class="nav__dropdown-content">
+                <a href="../menu/add_menu.html">Add Menu</a>
+                <a href="../menu/show_menu.html">Show Menu</a>
+              </div>
+            </li>
+            <li class="nav__item">
+              <a href="../order/order.html" class="nav__link">Cart</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Sign</a>
+            </li>
+            <li class="nav__item">
+              <i class="bx bx-moon change-theme" id="theme-button"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <main class="l-main">
+      <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+          <div class="home__data">
+            <h1 class="home__title">HIFI Delivery Eats</h1>
+            <h2 class="home__subtitle">
+              Savor the Finest Dishes Delivered to Your Door!
+            </h2>
+            <a href="#menu" class="button">Explore Our Menu</a>
+            <div class="delivered-meals">
+              <p class="delivered-text" id="dynamic-text">
+                <span>1,000+</span> meals delivered last week!
+              </p>
+            </div>
+          </div>
+          <img
+            src="./images/home.png"
+            alt="Home Image"
+            class="home__img"
+            onerror="this.src='https://via.placeholder.com/150?text=Home+Image+Not+Found';"
+          />
+        </div>
+      </section>
+
+      <section class="menu section bd-container" id="menu">
+        <span class="section-subtitle">Our Specialties</span>
+        <h2 class="section-title">Featured Dishes</h2>
+        <div class="menu__container bd-grid">
+          <!-- Salads Category -->
+          <div class="menu__content" data-category="salads">
+            <img
+              src="./images/Barbecue Salad.jpg"
+              alt="Barbecue Salad"
+              class="menu__img"
+              onerror="this.src='https://via.placeholder.com/150?text=Image+Not+Found';"
+            />
+            <h3 class="menu__name">Barbecue Salad</h3>
+            <span class="menu__category">Salads</span>
+          </div>
+          <!-- Seafood Category -->
+          <div class="menu__content" data-category="seafood">
+            <img
+              src="./images/Fish Fillet.jpg"
+              alt="Fish Fillet"
+              class="menu__img"
+              onerror="this.src='https://via.placeholder.com/150?text=Image+Not+Found';"
+            />
+            <h3 class="menu__name">Fish Fillet</h3>
+            <span class="menu__category">Seafood</span>
+          </div>
+          <!-- Meats Category -->
+          <div class="menu__content" data-category="meats">
+            <img
+              src="./images/Grilled Steak.jpg"
+              alt="Grilled Steak"
+              class="menu__img"
+              onerror="this.src='https://via.placeholder.com/150?text=Image+Not+Found';"
+            />
+            <h3 class="menu__name">Grilled Steak</h3>
+            <span class="menu__category">Meats</span>
+          </div>
+          <!-- Indian Category -->
+          <div class="menu__content" data-category="indian">
+            <img
+              src="./images/Hyderabadi Biryani.jpg"
+              alt="Hyderabadi Biryani"
+              class="menu__img"
+              onerror="this.src='https://via.placeholder.com/150?text=Image+Not+Found';"
+            />
+            <h3 class="menu__name">Hyderabadi Biryani</h3>
+            <span class="menu__category">Indian</span>
+          </div>
+          <!-- Fast Food Category -->
+          <div class="menu__content" data-category="fast-food">
+            <img
+              src="./images/Burger.jpg"
+              alt="Burger"
+              class="menu__img"
+              onerror="this.src='https://via.placeholder.com/150?text=Image+Not+Found';"
+            />
+            <h3 class="menu__name">Burger</h3>
+            <span class="menu__category">Fast Food</span>
+          </div>
+          <!-- Breakfast Category -->
+          <div class="menu__content" data-category="breakfast">
+            <img
+              src="./images/Breakfast Platter.jpg"
+              alt="Breakfast Platter"
+              class="menu__img"
+              onerror="this.src='https://via.placeholder.com/150?text=Image+Not+Found';"
+            />
+            <h3 class="menu__name">Breakfast Platter</h3>
+            <span class="menu__category">Breakfast</span>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px">
+          <div class="show1">
+            <a
+              href="../menu/show_menu.html"
+              class="button"
+              style="background-color: green"
+              >Discover Full Menu</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="about section bd-container" id="about">
+        <div class="about__container bd-grid">
+          <div class="about__data">
+            <div class="about_info">
+              <span class="section-subtitle_about__initial">About us</span>
+            </div>
+            <h2 class="section-title about__initial">
+              Crafting Culinary Excellence
+            </h2>
+            <p class="about__description">
+              Indulge in the finest cuisine with top-notch service at HIFI
+              Delivery Eats. Visit us for an unforgettable dining experience.
+            </p>
+            <div class="about_1"><a href="#" class="button">Our Story</a></div>
+          </div>
+          <img src="./imgs/about.jpg" alt="About Image" class="about__img" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">HIFI Delivery</a>
+          <span class="footer__description">Restaurant</span>
+          <div>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Services</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Delivery</a></li>
+            <li><a href="#" class="footer__link">Pricing</a></li>
+            <li><a href="#" class="footer__link">Fast Food</a></li>
+            <li><a href="#" class="footer__link">Reserve Your Spot</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Event</a></li>
+            <li><a href="#" class="footer__link">Contact Us</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Address</h3>
+          <ul>
+            <li>Hyderabad</li>
+            <li>Infosys</li>
+            <li>999 - 888 - 777</li>
+            <li>HIFI-delivery@email.com</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">
+        © 2025 Infosys Springboard Internship. All rights reserved
+      </p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="home.js"></script>
+  </body>
+</html>
